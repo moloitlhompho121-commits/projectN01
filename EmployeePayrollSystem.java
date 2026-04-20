@@ -1,16 +1,19 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt
+    nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java                                                                             to change this license
  */
-
 package com.mycompany.employeepayrollsystem;
 
-import static java.lang.IO.println;
 import java.util.Scanner;
+
 
 /**
  *
  * @author Student
  */
+
+
+ 
 public class EmployeePayrollSystem {
 
     public static void main(String[] args) {
@@ -33,7 +36,7 @@ public class EmployeePayrollSystem {
         
         if (details == 1){
             double initialSalary=0.0;
-        for(i=0; i < 4;i++){    
+            
         System.out.println("Enter employee Name: ");
         employeeName = input.nextLine();
         
@@ -54,12 +57,14 @@ public class EmployeePayrollSystem {
         
         initialSalary = hourlyRate *hoursWorked;
         bonus =initialSalary * 0.1;
+        
         }
-        }else if (status =="Part_time"){
+        else if (status =="Part_time"){
         double initialSalary=0.0;
            initialSalary = hourlyRate *hoursWorked;
            bonus =initialSalary * 0.5;
-        }else if (details == 2){
+        }
+        else if (details == 2){
             double initialSalary=0.0;
         System.out.println("Employee Name: "+employeeName);
         System.out.println("Employee ID: "+employeeId);
